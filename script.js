@@ -1,5 +1,3 @@
-
-
 // Define an array of quiz questions
 const quizQuestions = [
   {
@@ -107,7 +105,7 @@ function endQuiz() {
   questionContainer.innerHTML = `
     <h2>Quiz Completed!</h2>
     <p>Your Score: ${score} out of ${quizQuestions.length}</p>
-    <p>Score Percentage: ${scorePercentage}%</p>
+    <p>Score Percentage: ${scorePercentage.toFixed(2)}%</p>
   `;
 }
 
